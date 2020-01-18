@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
 
 
-/*@media screen and (max-width:800px){
-    body{
-       display: none !important;
-    }   
-   }*/
 body {
     font-family: 'Lora', sans-serif;
     margin: 0;
@@ -31,48 +26,70 @@ ul{
     padding: 1% 10%;
 }
 .line{
-    width: 35px;
-    height: 5px;
+    width: 2.3em;
+    height: 0.5em;
     background-color: whitesmoke;
-    margin: 6px;
+    margin: 0.3em;
     cursor: pointer;
     position: relative;
+    display: block;
 }
+.close {
+    position: absolute;
+    top: 0.8em;
+    display: none;
+    cursor: pointer;
+    
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 38px;
+    width: 4px;
+    background-color: whitesmoke;
+    
+  }
+  .close :hover {
+    opacity: 1;
+  }
+ 
 
-.navlinks{
+#navlinks{
     width: 10em;
     height: 5em;
     position: relative;
-    
+    display: none;    
 }
-.navlinks li{
+#navlinks li{
     background-color: black;
+    top: 3em;
     opacity: 0.5;
-    margin: 0.5em;
     padding: 0.6em 1em;
+    position: relative;
     list-style-type: none;
 }
 
-.navlinks a{  
+#navlinks a{  
     text-decoration: none;
+    position: relative;
     color: rgb(115, 193, 230);
 }
-.navlinks a:hover{
+#navlinks a:hover{
     color: whitesmoke;
     opacity: 0.6;
 }
 .Intro{
     text-align: center;
     color: whitesmoke;
-    margin-top: 10%;
+    margin-top: 15%;
     position: relative;
 }
 
 
 .static-helloworld{
-    font-size: 400%;
+    font-size: 350%;
     font-weight: bold;
-    top: 11%;  
     color:rgb(115, 193, 230);
     position: relative;
 }
