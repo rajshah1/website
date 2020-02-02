@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
+
+.secondPage{
+    top:100%;
+    position: absolute;
+    background-color: azure;
+    height: 100%;
+    width: 100%;
+}

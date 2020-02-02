@@ -1,3 +1,5 @@
+
+
 function myFunction() {
     setTimeout(showPage, 3000);
 }
@@ -32,17 +34,3 @@ function menu_click(){
 
     }
 }
-     
-    /*
-    var check_display = getComputedStyle(document.querySelector("#navlinks"));
-    if (check_display.display==="block"){;
-        check_display.display="none";
-    }
-    else{
-        check_display.display = "block"; 
-    }
-    if(check_display.style.display==="none"){
-        check_display.style.display="block";
-    }*/
-    //check_display.namedItem(display);.
-
