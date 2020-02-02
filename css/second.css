@@ -5,5 +5,37 @@
     position: absolute;
     background-color: azure;
     height: 100%;
-    width: 100%;
+    width: auto;
+    padding: 1% 13%;
+}
+.aboutHeader h4{
+    text-align: center;
+    color: rgb(115, 193, 230);
+    margin-bottom: 0;
+    font-size: 150%;
+}
+.aboutHeader h3{
+    color: black;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imageMine img{
+    width: 10%;
+    margin-top:3%;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+}
+.deepIntro p{
+    color: #888888;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.deepIntro{
+    margin-left: 20%;
+    float: right;
 }

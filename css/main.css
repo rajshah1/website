@@ -153,7 +153,7 @@ ul{
     position: relative;     
 }
 .education_sum{
-    font-size: 150%;
+    font-size: 100%;
     position: relative;
     margin-bottom: 10em;
 }
@@ -161,7 +161,7 @@ ul{
 .socialMedia{
     position: relative;
     display: table;
-    font-size: 1.1rem;
+    font-size: 2vw;
     margin: 0 auto;
      
 }
@@ -249,4 +249,3 @@ ul{
       opacity: 0;
     }
   }
-  
