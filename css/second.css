@@ -4,9 +4,9 @@
     top:100%;
     position: absolute;
     background-color: azure;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
-    padding: 1% 13%;
+    padding: 1% 5vw;
 }
 .aboutHeader h4{
     text-align: center;
@@ -24,22 +24,26 @@
     
 }
 .imageMine-intro{
-    display: flexbox;
+    display: flex;
 }
 .imageMine-intro img{
-    width: 8%;
-    margin-top:3%;
-    border-radius: 50%;
+    margin-top: 3%;
+    border-radius: 100%;
     order: 1;
-    flex: 10%;
+    flex: 1;
+    flex-basis: 5em;
+    flex-direction: column;
+    align-self: baseline;
+    flex-wrap: wrap;
+
 }
 .imageMine-intro p{
     color: #888888;
     text-align: left;
     font-size: 1.2rem;
     line-height: 2rem;
-    margin-left: 10%;
+    
     order: 2;
-    flex: 90%;
+    flex: 8;
 }
 
