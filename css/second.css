@@ -4,7 +4,7 @@
     top:100%;
     position: absolute;
     background-color: azure;
-    height: 100%;
+    height: 100vh;
     width: auto;
     padding: 1% 13%;
 }
@@ -21,21 +21,25 @@
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    
 }
-.imageMine img{
-    width: 10%;
+.imageMine-intro{
+    display: flexbox;
+}
+.imageMine-intro img{
+    width: 8%;
     margin-top:3%;
     border-radius: 50%;
-    float: left;
-    position: absolute;
+    order: 1;
+    flex: 10%;
 }
-.deepIntro p{
+.imageMine-intro p{
     color: #888888;
     text-align: left;
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-left: 10%;
+    order: 2;
+    flex: 90%;
 }
-.deepIntro{
-    margin-left: 20%;
-    float: right;
-}
+

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Lora', sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
-    scroll-behavior: smooth;
+    
     
 }
 
@@ -62,26 +64,27 @@ ul{
     background-repeat:no-repeat;
     background-attachment: scroll;
     background-size: cover ;
-    padding: 1% 10%;
+    padding: 1% 5vw;
 }
 .menu-button{
     cursor: pointer;
 }
 
 .line{
-    width: 2rem;
+    width: 2em;
     height: 0.3em;
     background-color: whitesmoke;
     margin: 0.4em;
     position: relative;
-    display: block;
+    
 }
 
 
 .close {
-    top:4%;
-    position: absolute;
-    left:12%;
+    margin-top:0;
+    margin-left: 2rem;
+    position: relative;
+    
     display: none;  
 }
   .close:before, .close:after {
@@ -103,7 +106,7 @@ ul{
 }
 #navlinks{
     width: 8em;
-    height: 4em;
+    height: 2em;
     top:2em;
     position: relative;
     display: none;    
@@ -119,7 +122,6 @@ ul{
 
 #navlinks a{  
     text-decoration: none;
-    position: relative;
     color: rgb(115, 193, 230);
 }
 #navlinks a:hover{
@@ -142,26 +144,28 @@ ul{
 
 
 .static-helloworld{
-    font-size: 5vw;
+    font-size: 150%;
     font-weight: bold;
     color:rgb(115, 193, 230);
     position: relative;
 }
 .static-name{
-    font-size: 6vw;
+    font-size: 9vw;
     font-weight: bold;
-    position: relative;     
+    position: relative;   
+    display: inline-block;  
 }
 .education_sum{
-    font-size: 100%;
+    font-size: 120%;
     position: relative;
-    margin-bottom: 10em;
+    display: block;
 }
 
 .socialMedia{
     position: relative;
     display: table;
-    font-size: 2vw;
+    top: 1em;
+    font-size: 1.5vw;
     margin: 0 auto;
      
 }
@@ -188,8 +192,8 @@ ul{
 
 
 .moreAboutMe a {
-    margin: 10%;
-    position: relative;
+    top: 60vh;
+    position: absolute;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
