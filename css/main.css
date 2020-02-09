@@ -54,6 +54,8 @@ ul{
 
 }
 .first-page{
+    min-height: 100vh;
+    width: auto;
     background-image: url("../images/background3.jpg");
     background-position: center center;
     bottom: 0px;
@@ -150,7 +152,7 @@ ul{
     position: relative;
 }
 .static-name{
-    font-size: 9vw;
+    font-size: 500%;
     font-weight: bold;
     position: relative;   
     display: inline-block;  
@@ -192,9 +194,9 @@ ul{
 
 
 .moreAboutMe a {
-    top: 60vh;
-    position: absolute;
-    z-index: 2;
+    
+    position: relative;
+    margin-top:10%;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);

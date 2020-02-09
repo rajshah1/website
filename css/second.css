@@ -6,9 +6,9 @@
     background-color: azure;
     min-height: 100vh;
     width: auto;
-    padding: 1% 5vw;
+    padding: 1% 10vw;
 }
-.aboutHeader h4{
+.aboutHeader h4, .skills h4{
     text-align: center;
     color: rgb(115, 193, 230);
     margin-bottom: 0;
@@ -25,25 +25,37 @@
 }
 .imageMine-intro{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 .imageMine-intro img{
     margin-top: 3%;
-    border-radius: 100%;
+    max-width: 10em;
+    max-height: 10em;
+    border-radius: 50%;
     order: 1;
     flex: 1;
-    flex-basis: 5em;
-    flex-direction: column;
-    align-self: baseline;
-    flex-wrap: wrap;
-
+    align-self: flex-start ;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .imageMine-intro p{
     color: #888888;
     text-align: left;
     font-size: 1.2rem;
-    line-height: 2rem;
-    
+    line-height: 2em;
+    margin-left: 1em;
     order: 2;
-    flex: 8;
+    flex: 9 ;
+}
+.skills p{
+    color: #888888;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5em;
+
 }
 
