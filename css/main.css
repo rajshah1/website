@@ -8,9 +8,7 @@ body {
     font-family: 'Lora', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-    
-    
+    background-color: black;    
 }
 
 #myDiv{
@@ -156,12 +154,24 @@ ul{
     font-size: 500%;
     font-weight: bold;
     position: relative;   
-    display: inline-block;  
+    display: block;  
 }
 .education_sum{
     font-size: 120%;
-    position: relative;
-    display: block;
+    position: relative;    
+    
+}
+@media only screen and (max-width:600px){
+  .static-name{
+    font-size: 10vw;
+  }
+  .education_sum .removeMe{
+    display: none;
+  }
+  .addNewLine::before{
+    content: "\A";
+    white-space: pre;
+  }
 }
 
 .socialMedia{
@@ -195,7 +205,6 @@ ul{
 
 
 .moreAboutMe a {
-    
     position: relative;
     margin-top:10%;
     display: inline-block;

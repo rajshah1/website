@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
 
 .secondPage{
     top:100%;
@@ -32,11 +33,10 @@
 }
 .imageMine-intro img{
     margin-top: 3%;
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 7em;
+    max-height: 7em;
     border-radius: 50%;
     order: 1;
-    flex: 1;
     align-self: flex-start ;    
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +51,21 @@
     order: 2;
     flex: 9 ;
 }
+
+    .imageMine-intro{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .imageMine-intro img{
+        width: 7em;
+        height: 7em;
+        margin-left: 30vw;
+        
+    }
+    
+  }
+  
 .skills p{
     color: #888888;
     text-align: left;
@@ -58,4 +73,69 @@
     line-height: 1.5em;
 
 }
+.skillResponsive {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  .left-skills{
+      order:1;
+      flex:1;
+  }
+  .right-skills{
+      order:2;
+      flex:1;
+  }
+  
+  .container {
+    background-color: #ddd;
+    width:30vw;
+    height: 1em;
+    border-radius: 0.5em;
+    
+  }
+  
+  .skillsBar {
+    text-align: right;
+    color: white;
+    background-color: rgb(111, 172, 207);
+    height: 1em;
+    border-radius: 0.5em;
+    
+  }
+  
+  
+  .java {
+    width: 90%;
+    transition-timing-function: ease-in;
+  }
+  .CSS,.MYSQL {
+    width: 75%;
+  }
+  
+  .MEAN,.Javascript{
+    width: 70%; 
 
+  }
+  .MACHINE{
+    width:60%;
+  }
+  .MULESOFT, .python{
+    width: 80%;
+  }
+
+  @media only screen and (max-width:600px){
+    .imageMine-intro{
+        display: block;
+    }
+    .imageMine-intro img{
+        width: 7em;
+        height: 7em;
+        margin-left: 30vw;
+        
+    }
+    .skillResponsive{
+        display: block;
+
+    }
+  }
