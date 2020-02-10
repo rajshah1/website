@@ -22,14 +22,14 @@ body {
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     margin: -50px 0 0 -50px;
-    border: 10px solid black;
+    border: 10px solid rgb(203, 212, 216);
     border-radius: 50%;
     border-top: 12px solid rgb(115, 193, 230);;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -78,6 +78,7 @@ ul{
     background-color: whitesmoke;
     margin: 0.4em;
     position: relative;
+    z-index: 2;
     
 }
 
