@@ -2,6 +2,10 @@
 
 *{
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
 }
 
 body {
@@ -13,6 +17,7 @@ body {
 
 #myDiv{
     display: none;
+    position: relative;
 }
 
 #loader {
@@ -45,7 +50,7 @@ body {
 
 
 
-ul{
+ul{ 
     padding: 0;
     text-align: left;
     list-style-type: none;
@@ -60,32 +65,34 @@ ul{
     top:0px;
     right: 0px;
     left: 0px;
-    position: absolute;
     background-repeat:no-repeat;
     background-attachment: scroll;
     background-size: cover ;
     padding: 1% 5vw;
+    min-height: 100vh;
 }
 .menu-button{
     cursor: pointer;
+    position : fixed;
 }
 
 .line{
     width: 2em;
     height: 0.3em;
-    background-color: whitesmoke;
+    background-color: rgb(115, 193, 230);
     margin: 0.4em;
     position: relative;
-    z-index: 2;
+    z-index: 99; /* Make sure it does not overlap */
     
 }
 
 
 .close {
     margin-top:0;
+    z-index: 99; /* Make sure it does not overlap */
+
     margin-left: 2rem;
     position: relative;
-    
     display: none;  
 }
   .close:before, .close:after {
@@ -93,11 +100,11 @@ ul{
     content: ' ';
     height: 38px;
     width: 6px;
-    background-color: whitesmoke;
+    background-color: rgb(115, 193, 230);
    
   }
   .close :hover {
-    opacity: 1;
+    opacity: 0.8;
   }
   .close::after{
       transform: rotate(45deg);
@@ -109,21 +116,26 @@ ul{
     width: 8em;
     height: 2em;
     top:2em;
-    position: relative;
-    display: none;    
+    position: fixed;
+    display: none;   
+    z-index: 99; /* Make sure it does not overlap */
+ 
 }
 #navlinks li{
     background-color: black;
-    top: 1em;
-    opacity: 0.5;
+    left: 1em;
+    opacity: 1;
     padding: 0.6em 0.5em;
     position: relative;
     list-style-type: none;
+    z-index: 99; /* Make sure it does not overlap */
 }
 
 #navlinks a{  
     text-decoration: none;
     color: rgb(115, 193, 230);
+    z-index: 99; /* Make sure it does not overlap */
+    
 }
 #navlinks a:hover{
     color: whitesmoke;
@@ -138,7 +150,7 @@ ul{
     position: relative;
     text-align: center;
     color: whitesmoke;
-    top: 20%;
+    margin-top: 20%;
     display: block;
     
 }
@@ -265,3 +277,19 @@ ul{
       opacity: 0;
     }
   }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 0; /* Place the button at the bottom of the page */
+    right: 0px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: blueviolet; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 20px; /* Some padding */
+    
+    
+  }
+ 
