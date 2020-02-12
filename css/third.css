@@ -8,6 +8,7 @@
     min-height: 100vh;;
     width: auto;
     padding: 1% 10vw;
+    
 }
 .thirdPage h3{
     margin-top: 1.5em;
@@ -19,6 +20,7 @@
     margin: 30px auto;
     position: relative;
     overflow: hidden;
+    margin-bottom: 3em;
  }
  
  .container:before {
