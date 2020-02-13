@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');  
-
-.secondPage{
-    top:auto;
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+.secondPage {
+    top: auto;
     position: static;
     background-color: azure;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -10,169 +9,189 @@
     width: auto;
     padding: 1% 10vw;
 }
-.aboutHeader h4, .skills h4,.thirdPage h4{
+
+.aboutHeader h4,
+.skills h4,
+.thirdPage h4,
+.fourthPage h4 {
     text-align: center;
     color: rgb(115, 193, 230);
     margin-bottom: 0;
     font-size: 150%;
 }
-.aboutHeader h3,.thirdPage h3{
+
+.aboutHeader h3,
+.thirdPage h3,
+.fourthPage h3 {
     color: black;
     margin-top: 0;
     display: block;
     text-align: center;
     font-size: 2rem;
     font-family: Lato;
-    
 }
-.imageMine-intro{
+
+.imageMine-intro {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    
 }
-.imageMine-intro img{
+
+.imageMine-intro img {
     margin-top: 3%;
     max-width: 7em;
     max-height: 7em;
     border-radius: 50%;
     order: 1;
-    align-self: flex-start ;    
+    align-self: flex-start;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-.imageMine-intro p{
+
+.imageMine-intro p {
     color: #888888;
     text-align: left;
     font-size: 1.2rem;
     line-height: 2em;
     margin-left: 1em;
     order: 2;
-    flex: 9 ;
-}  
-.skills p{
+    flex: 9;
+}
+
+.skills p {
     color: #888888;
     text-align: left;
     font-size: 1rem;
     line-height: 1.5em;
-
 }
+
 .skillResponsive {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
-  }
-  .left-skills{
-      order:1;
-      flex:1;
-  }
-  .right-skills{
-      order:2;
-      flex:1;
-  }
-  
-  .containerskills {
+}
+
+.left-skills {
+    order: 1;
+    flex: 1;
+}
+
+.right-skills {
+    order: 2;
+    flex: 1;
+}
+
+.containerskills {
     background-color: #ddd;
-    width:30vw;
+    width: 30vw;
     height: 1em;
     border-radius: 0.5em;
-    
-  }
-  
-  .skillsBar {
+}
+
+.skillsBar {
     text-align: right;
-    color: white;
+    color: rgb(81, 138, 79);
     background-color: rgb(111, 172, 207);
     height: 1em;
     border-radius: 0.5em;
-    
-  }
-  
-  
-  .java {
-    width: 90%;
-  }
-  .CSS,.MYSQL {
-    width: 75%;
-  }
-  
-  .MEAN,.Javascript{
-    width: 70%;
-  }
-  .MACHINE{
-    width:60%;
-  }
-  .MULESOFT, .python{
-    width: 80%;
-  }
-  .hireDownload{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction:row;
-      flex-wrap: wrap;
-      margin-top: 4em;
-      text-align: center;
-      font-family: Lato;
-      font-weight: bold; 
-      flex-basis: 1em;
-      position: relative; 
-      margin-bottom: 3em;
-  }
-  .hireMe{
-    width:15em;
-    height: 2em;
-      text-decoration: none;
-      border-style: solid;
-      border-color: black;
-      color: black;
-      padding: 0.5em 0em;
-      font-size: 1rem;
-    
-  }
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    transform: scale();
+}
 
-  
-    .downLoadResume{ 
-        width:15em;
-        height: 2em;
-        font-size: 1rem;
-        overflow: hidden;
-        text-decoration: none;
-        background-color: black;
-        color:whitesmoke;
-        border-style: solid;
-        border-color: black;
-        padding: 0.5em 0em;
-        position: relative;
-    }
-    .hireMe:hover,.downLoadResume:hover{
+.java {
+    width: 90%;
+}
+
+.CSS,
+.MYSQL {
+    width: 75%;
+}
+
+.MEAN,
+.Javascript {
+    width: 70%;
+}
+
+.MACHINE {
+    width: 60%;
+}
+
+.MULESOFT,
+.python {
+    width: 80%;
+}
+
+.hireDownload {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    text-align: center;
+    font-family: Lato;
+    font-weight: bold;
+    flex-basis: 1em;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.hireMe {
+    width: 15em;
+    height: 2em;
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    padding: 0.3em 0em;
+    font-size: 1rem;
+}
+
+.downLoadResume {
+    width: 15em;
+    height: 2em;
+    font-size: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+    padding: 0.3em 0em;
+    position: relative;
+}
+
+.hireMe:hover,
+.downLoadResume:hover {
     cursor: pointer;
-    border-color:rgb(111, 172, 207) ;
-    color:rgb(111, 172, 207)
-    }
-    .hireDownload::after{
-      content: " ";
-      
-    }
-  @media only screen and (max-width:600px){
-    .imageMine-intro, .skillResponsive{
+    border-color: rgb(111, 172, 207);
+    color: rgb(111, 172, 207)
+}
+
+.hireDownload::after {
+    content: " ";
+}
+
+@media only screen and (max-width:768px) {
+    .imageMine-intro,
+    .skillResponsive {
         display: block;
     }
-    .imageMine-intro img{
+    .imageMine-intro img {
         width: 7em;
         height: 7em;
         margin-left: 30vw;
     }
-    .hireMe,.downLoadResume{
+    .hireMe,
+    .downLoadResume {
         height: 2em;
         width: 100%;
         margin-bottom: 2em;
     }
-    
-    .containerskills{
+    .containerskills {
         width: 80vw;
     }
-
-  }
+}

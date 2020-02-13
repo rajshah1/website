@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+.fourthPage {
+    position: static;
+    background-color: black;
+    min-height: 100vh;
+    width: auto;
+    padding: 1% 10vw;
+}
+
+.fourthPage h4 {
+    margin-top: 2em;
+}
+
+.fourthPage h3 {
+    margin-top: 1em;
+    color: whitesmoke;
+}
+
+.fourthPage h6 {
+    margin-top: 1em;
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+}
+
+.formMain {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input[type=text],
+[type=email],
+[name=contactMessage] {
+    width: 100%;
+    background: transparent;
+    color: aqua;
+    font-size: 1.5rem;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 4px solid rgb(115, 193, 230);
+    border-bottom-color: whitesmoke;
+    border-style: none none solid none;
+    opacity: 0.5;
+    outline: none;
+    resize: none;
+}
+
+input[type=text]:focus,
+[type=email]:focus,
+[name=contactMessage]:focus {
+    border-style: none none solid none;
+    border-bottom-color: rgb(115, 193, 230);
+}
+
+.submitform {
+    margin-top: 1em;
+    width: 100%;
+    height: 2em;
+    font-family: Lato;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgb(115, 193, 230);
+    border: none;
+    cursor: pointer;
+}
+
+.address {
+    color: whitesmoke;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.fa-street-view {
+    font-size: 3rem;
+}
+
+.address strong {
+    margin-top: 3em;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(115, 193, 230);
+}
+
+.address br {
+    padding-top: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    .submitform {
+        font-size: 1rem;
+        height: 8vw;
+        width: 80vh;
+    }
+    input[type=text],
+    [type=email],
+    [name=contactMessage] {
+        width: 100%;
+        padding: 1em;
+    }
+    .formMain {
+        display: block;
+    }
+    .fourthPage h3,
+    h4,
+    h6 {
+        font-size: 5vw;
+    }
+}

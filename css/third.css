@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');  
-
-.thirdPage{
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+.thirdPage {
     position: static;
     background-color: rgb(163, 187, 187);
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    min-height: 100vh;;
+    min-height: 100vh;
+    ;
     width: auto;
     padding: 1% 10vw;
-    
 }
-.thirdPage h3{
+
+.thirdPage h3 {
     margin-top: 1.5em;
     font-weight: bold;
 }
- 
- .container {
+
+.container {
     width: 100%;
     margin: 30px auto;
     position: relative;
     overflow: hidden;
     margin-bottom: 3em;
- }
- 
- .container:before {
+}
+
+.container:before {
     content: '';
     position: absolute;
     top: 0;
@@ -32,10 +32,9 @@
     width: 2px;
     height: 100%;
     background: #CCD1D9;
-    z-index: 1
- }
- 
- .timeline-block {
+}
+
+.timeline-block {
     width: -webkit-calc(100% + 8px);
     width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);
@@ -48,72 +47,68 @@
     -moz-box-pack: justify;
     justify-content: space-between;
     clear: both;
- }
- 
- .timeline-block-right {
+}
+
+.timeline-block-right {
     float: right;
     text-align: left;
- }
- 
- .timeline-block-left {
+}
+
+.timeline-block-left {
     float: left;
     direction: rtl;
-    
- }
- 
- .marker {
+}
+
+.marker {
     width: 16px;
     height: 16px;
     border-radius: 50%;
     border: 2px solid #666;
     background: #4FC1E9;
     margin-top: 10px;
-    z-index: 9999
- }
- 
- .timeline-content {
+    z-index: 1;
+}
+
+.timeline-content {
     width: 95%;
     padding: 0 15px;
     color: #666
- }
- 
- .timeline-content h3 {
+}
+
+.timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: bold;
     font-family: Lato;
- }
- 
- .timeline-content span {
+}
+
+.timeline-content span {
     font-size: 15px;
-    color:black
- }
- 
- .timeline-content p {
+    color: black
+}
+
+.timeline-content p {
     font-size: 14px;
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
- }
- 
- 
- @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .container:before {
-       left: 8px;
-       width: 2px;
+        left: 8px;
+        width: 2px;
     }
     .timeline-block {
-       width: 100%;
-       margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 30px;
     }
     .timeline-block-right {
-       float: none;
+        float: none;
     }
- 
     .timeline-block-left {
-       float: none;
-       direction: ltr;
+        float: none;
+        direction: ltr;
     }
- }
- 
+}

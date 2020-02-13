@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');   
-
-*{
-  scroll-behavior: smooth;
-  -webkit-box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
+* {
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
 body {
     font-family: 'Lora', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;    
+    background-color: black;
 }
 
-#myDiv{
+#myDiv {
     display: none;
     position: relative;
 }
@@ -30,213 +28,218 @@ body {
     margin: -50px 0 0 -50px;
     border: 10px solid rgb(203, 212, 216);
     border-radius: 50%;
-    border-top: 12px solid rgb(115, 193, 230);;
+    border-top: 12px solid rgb(115, 193, 230);
+    ;
     width: 40px;
     height: 40px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-    
-  }
+}
 
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-ul{ 
+ul {
     padding: 0;
     text-align: left;
     list-style-type: none;
-
 }
-.first-page{
+
+.first-page {
     min-height: 100vh;
     width: auto;
     background-image: url("../images/background3.jpg");
     background-position: center center;
     bottom: 0px;
-    top:0px;
+    top: 0px;
     right: 0px;
     left: 0px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover ;
+    background-size: cover;
     padding: 1% 5vw;
     min-height: 100vh;
 }
-.menu-button{
+
+.menu-button {
     cursor: pointer;
-    position : fixed;
+    position: fixed;
 }
 
-.line{
+.line {
     width: 2em;
     height: 0.3em;
     background-color: rgb(115, 193, 230);
     margin: 0.4em;
     position: relative;
-    z-index: 99; /* Make sure it does not overlap */
-    
+    z-index: 999;
+    /* Make sure it does not overlap */
 }
-
 
 .close {
-    margin-top:0;
-    z-index: 99; /* Make sure it does not overlap */
-
+    margin-top: 0;
+    z-index: 999;
+    /* Make sure it does not overlap */
     margin-left: 2rem;
     position: relative;
-    display: none;  
+    display: none;
 }
-  .close:before, .close:after {
+
+.close:before,
+.close:after {
     position: absolute;
     content: ' ';
     height: 38px;
     width: 6px;
     background-color: rgb(115, 193, 230);
-   
-  }
-  .close :hover {
+}
+
+.close :hover {
     opacity: 0.8;
-  }
-  .close::after{
-      transform: rotate(45deg);
-  }
-  .close::before{
+}
+
+.close::after {
+    transform: rotate(45deg);
+}
+
+.close::before {
     transform: rotate(-45deg);
 }
-#navlinks{
-    width: 8em;
+
+#navlinks {
+    width: 10em;
     height: 2em;
-    top:2em;
+    top: 2em;
     position: fixed;
-    display: none;   
-    z-index: 99; /* Make sure it does not overlap */
- 
+    display: none;
+    z-index: 99;
+    margin-top: 2em;
+    /* Make sure it does not overlap */
 }
-#navlinks li{
+
+#navlinks li {
     background-color: black;
     left: 1em;
     opacity: 1;
     padding: 0.6em 0.5em;
     position: relative;
     list-style-type: none;
-    z-index: 99; /* Make sure it does not overlap */
+    z-index: 99;
+    /* Make sure it does not overlap */
 }
 
-#navlinks a{  
+#navlinks a {
     text-decoration: none;
     color: rgb(115, 193, 230);
-    z-index: 99; /* Make sure it does not overlap */
-    
+    z-index: 99;
+    /* Make sure it does not overlap */
 }
-#navlinks a:hover{
+
+#navlinks a:hover {
     color: whitesmoke;
     opacity: 0.6;
 }
 
-#navlinks a:visited{
-    color:whitesmoke;
-    color: rgb(115, 193, 230);  
+#navlinks a:visited {
+    color: whitesmoke;
+    color: rgb(115, 193, 230);
 }
-.Intro{
+
+.Intro {
     position: relative;
     text-align: center;
     color: whitesmoke;
-    margin-top: 20%;
+    margin: 40vh auto;
     display: block;
-    
 }
 
-
-.static-helloworld{
+.static-helloworld {
     font-size: 150%;
     font-weight: bold;
-    color:rgb(115, 193, 230);
+    color: rgb(115, 193, 230);
     position: relative;
 }
-.static-name{
+
+.static-name {
     font-size: 500%;
     font-weight: bold;
-    position: relative;   
-    display: block;  
-}
-.education_sum{
-    font-size: 120%;
-    position: relative;    
-    
-}
-@media only screen and (max-width:600px){
-  .static-name{
-    font-size: 10vw;
-  }
-  .education_sum .removeMe{
-    display: none;
-  }
-  .addNewLine::before{
-    content: "\A";
-    white-space: pre;
-  }
+    position: relative;
+    display: block;
 }
 
-.socialMedia{
+.education_sum {
+    font-size: 120%;
+    position: relative;
+}
+
+.socialMedia {
     position: relative;
     display: table;
     top: 1em;
-    font-size: 1.5vw;
     margin: 0 auto;
-     
 }
-.socialMedia i{
+
+.socialMedia i {
     position: absolute;
-    vertical-align: middle; 
+    vertical-align: middle;
     cursor: pointer;
     color: white;
 }
-.socialMedia ul{
-    margin: 10em 0em; 
+
+.socialMedia ul {
+    margin: 10em 0em;
     position: relative;
     display: inline;
 }
-.socialMedia li{
+
+.socialMedia li {
     display: inline;
     position: relative;
     margin: 0em 2em;
-    
-}
-.socialMedia i:hover{
-    color:rgb(115, 193, 230);
 }
 
+.socialMedia i:hover {
+    color: rgb(115, 193, 230);
+}
 
 .moreAboutMe a {
     position: relative;
-    margin-top:10%;
+    margin-top: 10%;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: #fff;
-    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-  }
-  .moreAboutMe a:hover {
+}
+
+.moreAboutMe a:hover {
     opacity: .5;
     cursor: pointer;
-  }
-  
+}
+
 #scrollDown a {
     padding-top: 70px;
-  }
-  #scrollDown a span {
+}
+
+#scrollDown a span {
     position: absolute;
     top: 0;
     left: 50%;
@@ -250,46 +253,73 @@ ul{
     -webkit-animation: sdb05 1.5s infinite;
     animation: sdb05 1.5s infinite;
     box-sizing: border-box;
-  }
-  @-webkit-keyframes sdb05 {
+}
+
+@-webkit-keyframes sdb05 {
     0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
     }
     50% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
-  }
-  @keyframes sdb05 {
+}
+
+@keyframes sdb05 {
     0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
     }
     50% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
     }
-  }
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 0; /* Place the button at the bottom of the page */
-    right: 0px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: blueviolet; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 20px; /* Some padding */
-    
-    
-  }
- 
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 0;
+    /* Place the button at the bottom of the page */
+    right: 0px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: blueviolet;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 20px;
+    /* Some padding */
+}
+
+@media only screen and (max-width:768px) {
+    .static-name {
+        font-size: 10vw;
+    }
+    .education_sum .removeMe {
+        display: none;
+    }
+    .addNewLine::before {
+        content: "\A";
+        white-space: pre;
+    }
+    .socialMedia {
+        font-size: 1.5vw;
+    }
+}
