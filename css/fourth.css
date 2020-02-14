@@ -40,6 +40,7 @@ input[type=text],
     background: transparent;
     color: aqua;
     font-size: 1.5rem;
+    padding: 1rem;
     margin: 10px 5px;
     box-sizing: border-box;
     border: 4px solid rgb(115, 193, 230);
@@ -67,12 +68,13 @@ input[type=text]:focus,
     background-color: rgb(115, 193, 230);
     border: none;
     cursor: pointer;
+    margin-bottom: 2em;
 }
 
 .address {
     color: whitesmoke;
     text-align: center;
-    margin: 2em auto;
+    margin: 0 auto;
 }
 
 .fa-street-view {
@@ -99,7 +101,8 @@ input[type=text]:focus,
     }
     input[type=text],
     [type=email],
-    [name=contactMessage] {
+    [name=contactMessage],
+    .submitform {
         width: 100%;
         padding: 1em;
     }
@@ -110,5 +113,8 @@ input[type=text]:focus,
     h4,
     h6 {
         font-size: 5vw;
+    }
+    .address {
+        margin: 2em auto;
     }
 }
