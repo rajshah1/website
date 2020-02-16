@@ -1,5 +1,5 @@
 function myFunction() {
-    setTimeout(showPage, 3000);
+    setTimeout(showPage, 1000);
 }
 
 function showPage() {

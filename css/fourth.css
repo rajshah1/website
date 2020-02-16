@@ -93,6 +93,27 @@ input[type=text]:focus,
     padding-top: 3em;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.copyright {
+    color: grey;
+    margin-left: 10%;
+    margin-top: 1.3em;
+}
+
+.socialMediaFooter {
+    margin-right: 10%;
+}
+
 @media screen and (max-width: 768px) {
     .submitform {
         font-size: 1rem;

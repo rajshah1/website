@@ -36,6 +36,42 @@ body {
     animation: spin 2s linear infinite;
 }
 
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate3d(0, -50px, 0);
+    -ms-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -ms-transition: -webkit-transform 2s ease-out;
+    transition: transform 2s ease-out;
+}
+
+.pace.pace-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 10px;
+    background: #29d;
+    pointer-events: none;
+}
+
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -176,7 +212,7 @@ ul {
 }
 
 .static-name {
-    font-size: 1000%;
+    font-size: 10vw;
     font-weight: bold;
     position: relative;
     display: block;
@@ -187,27 +223,31 @@ ul {
     position: relative;
 }
 
-.socialMedia {
+.socialMedia,
+.socialMediaFooter {
     position: relative;
     display: table;
     top: 1em;
     margin: 0 auto;
 }
 
-.socialMedia i {
+.socialMedia i,
+.socialMediaFooter i {
     position: absolute;
     vertical-align: middle;
     cursor: pointer;
     color: white;
 }
 
-.socialMedia ul {
+.socialMedia ul,
+.socialMediaFooter ul {
     margin: 10em 0em;
     position: relative;
     display: inline;
 }
 
-.socialMedia li {
+.socialMedia li,
+.socialMediaFooter li {
     display: inline;
     position: relative;
     margin: 0em 2em;
