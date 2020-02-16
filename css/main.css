@@ -96,7 +96,7 @@ ul {
     list-style-type: none;
 }
 
-.first-page {
+#first-page {
     min-height: 100vh;
     width: auto;
     background-image: url("../images/background3.jpg");
